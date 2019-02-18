@@ -1,0 +1,21 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" href="../static/css/normalize.css">
+        <link rel="stylesheet" href="../static/css/skeleton.css">
+        <link rel="stylesheet" href="../static/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../static/css/style.css">
+    </head>
+    <body>
+        <header><h1>Simple Exchanger</h1></header>
+        <div class="container">   
+            <p class="menu"><i class="fa fa-home"></i> <a href="./">Inicio</a> | <i class="fa fa-money"></i> <a href="./nuevacompra">Compra Divisas</a> | <i class="fa fa-calculator"></i> <a href="./exchanger">Exchanger</a></p>
+            {% block body%}
+            {% endblock %}
+        </div>
+        <footer><p>Criptobook &copy;2019</p></footer>
+    </body>
+</html>
